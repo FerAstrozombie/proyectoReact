@@ -1,43 +1,22 @@
 import "./styles.css"
 import { useState } from 'react';
 
-const Contador = ({stock}) => {
+const Contador = (props) => {
 
-    const [valor , actualizador] = useState(0);    
+    const [items , setItem] = useState(0);    
     
-    if (valor < stock) {
+    const sumar = () => items < props.stock  ? setItem(items + 1) : alert("No hay mas stock disponible")
+    const restar = () => items > 0 ? setItem(items - 1) : alert("No se aceptan valores negativos")
 
-        return (
-            
-            <>
-            <button className="contador" onClick={() =>{
-                actualizador(valor + 1);
-            }}>+</button>
-            <span>{valor}</span>
-            <button className="contador" onClick={() =>{
-                if (valor === 0){
-                    
-                }else {
-                    actualizador(valor - 1);
-                }
-            }}>-</button>
-            </>
+    return (
+        <>
+            <span>Stock {props.stock }</span>
+            <button className="contador" onClick={sumar}>+</button>
+            <span>{items}</span>
+            <button className="contador" onClick={restar}>-</button>        
+        </>
+    )
     
-        )
-    }else {
-        return (
-            
-            <>
-            <button className="contador" onClick={() =>{
-                
-            }}>+</button>
-            <span>{valor}</span>
-            <button className="contador" onClick={() =>{
-                actualizador(valor - 1);
-            }}>-</button>
-            </>
-        )
-    }
 
 }
 

@@ -4,7 +4,10 @@ import { CartWdget } from "../CartWidget/CartWdget";
 
 const NavBar = () => {
     return (<div className="menu">
-        <img src={logo} className="logo" alt="logo" />
+        <a href="./App.js">
+            <img src={logo} className="logo" alt="logo" />
+        </a>
+        
         <ul>
             <li className="lista"><a href="www.google.com">Inicio</a></li>
             <li className="lista"><a href="www.google.com">Tienda</a></li>
