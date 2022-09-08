@@ -5,6 +5,7 @@ const data = [
         id: "1",
         nombre: "Guitarra eko strato black",
         precio: 20000,
+        descripcion: "Esta es una guitarra para rockear hasta que te canses. No te vas a arrepentir de tenerla en tus manos. "
     },
     {
         imagen: "imagenes/guitarra-electrica-hagstrom-2-microfonos-hagstrom-custom-62-black-burst.jpg",
