@@ -11,9 +11,11 @@ const Contador = (props) => {
     return (
         <>
             <span>Stock {props.stock }</span>
-            <button className="contador" onClick={sumar}>+</button>
-            <span>{items}</span>
-            <button className="contador" onClick={restar}>-</button>        
+            <div className="acomodadoContador">            
+                <button className="contador" onClick={sumar}>+</button>
+                <span>{items}</span>
+                <button className="contador" onClick={restar}>-</button>        
+            </div>
         </>
     )
     

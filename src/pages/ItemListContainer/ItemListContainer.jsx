@@ -1,8 +1,7 @@
 import "./styles.css"
-import Contador from "../Contador/Contador"
-import data from "../mockData"
+import data from "../../components/mockData"
 import { useEffect, useState } from "react"
-import ItemList from "../ItemList/ItemList"
+import ItemList from "../../components/ItemList/ItemList"
 
 import React from 'react'
 
@@ -14,8 +13,6 @@ const ItemListContainer = ({greeting}) => {
         })
     },)
 
-    const stock = 9;
-
     const getProducts = new Promise((resolve, reject) => {
             setTimeout(() => {
                 resolve(data);
@@ -25,8 +22,7 @@ const ItemListContainer = ({greeting}) => {
         return (
         <>
         <h2 className="texto">{greeting}</h2>
-        <ItemList lista = {productList}/>
-        <Contador stock = {stock} />
+        <ItemList lista = {productList}/>        
         </>
     )
 }

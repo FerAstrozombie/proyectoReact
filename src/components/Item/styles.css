@@ -1,6 +1,7 @@
 .guitarras {
     width: 350px;
-    background-color: black;
+    background-color: white;
+    border-radius: 30px;
     padding-top: 30px;
     margin-top: 20px;
 }
@@ -28,7 +29,7 @@
 
 }
 h2,h3 {
-    color: #FFC800;
+    color: black;
 }
 img {
     border-radius: 30px;

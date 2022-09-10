@@ -1,19 +1,17 @@
-span {
-    color: #FFC800;
-    font-size: 1rem; 
-    margin-bottom: 10px;
-}
+.contenedorDetalle {
 
-.acomodadoContador {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     text-align: center;
-    align-items: center;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 30px;
 }
 
-.contador {
-    width: 30px;
+.boton {
+    width: 150px;
     height: 30px;
     margin: 20px;
     border: 1px solid #FFC800;

@@ -1,18 +1,17 @@
 import "./styles.css";
 import logo from '../../logo.png';
 import { CartWdget } from "../CartWidget/CartWdget";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
     return (<div className="menu">
-        <a href="./App.js">
+        <NavLink to={"./App.js"}>
             <img src={logo} className="logo" alt="logo" />
-        </a>
+        </NavLink>
         
         <ul>
-            <li className="lista"><a href="www.google.com">Inicio</a></li>
-            <li className="lista"><a href="www.google.com">Tienda</a></li>
-            <li className="lista"><a href="www.google.com">Conocenos</a></li>
-            <li className="lista"><a href="www.google.com">Contacto</a></li>
+            <li className="lista"><NavLink to={"./App.js"}>Inicio</NavLink></li>
+            <li className="lista"><NavLink to={"/productos"}>Productos</NavLink></li>            
         </ul>
         <button className="botonSesion">Inicia sesion</button>
         <CartWdget/>
