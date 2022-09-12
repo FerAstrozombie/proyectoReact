@@ -11,7 +11,9 @@ const NavBar = () => {
         
         <ul>
             <li className="lista"><NavLink to={"./App.js"}>Inicio</NavLink></li>
-            <li className="lista"><NavLink to={"/productos"}>Productos</NavLink></li>            
+            <li className="lista"><NavLink to={"/productos"}>Productos</NavLink></li>   
+            <li className="lista"><NavLink to={"/category/Electrica"}>Electrica</NavLink></li> 
+            <li className="lista"><NavLink to={"/category/Electroacustica"}>Electroacustica</NavLink></li>        
         </ul>
         <button className="botonSesion">Inicia sesion</button>
         <CartWdget/>

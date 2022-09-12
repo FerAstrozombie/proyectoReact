@@ -16,6 +16,7 @@ const ItemList = ({lista}) => {
                             nombre = {producto.nombre} 
                             precio ={producto.precio} 
                             imagen = {producto.imagen} 
+                            categoria = {producto.categoria}
                         />                    
                     </Link>
                 ))

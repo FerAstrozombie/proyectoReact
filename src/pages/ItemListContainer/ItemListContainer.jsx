@@ -2,21 +2,31 @@ import "./styles.css"
 import data from "../../components/mockData"
 import { useEffect, useState } from "react"
 import ItemList from "../../components/ItemList/ItemList"
+import { useParams } from "react-router-dom"
 
 import React from 'react'
 
+
 const ItemListContainer = ({greeting}) => {
+    const {categoryName} = useParams();
+    console.log(categoryName);
     const [productList, setProductList] = useState([]);
     useEffect (() => {
-        getProducts.then((response) => {
+        if(categoryName){
+            const response = data.filter((response) => response.category === categoryName)
             setProductList(response);
-        })
-    },)
+        }else{
+            getProducts.then((response) => {
+                setProductList(response);
+            })
+        }        
+    },[categoryName])
 
-    const getProducts = new Promise((resolve, reject) => {
+    const getProducts = new Promise((resolve, reject) => { 
             setTimeout(() => {
                 resolve(data);
             }, 2000);
+            
         });
         
         return (
