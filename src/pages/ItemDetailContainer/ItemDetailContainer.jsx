@@ -8,7 +8,7 @@ import "./styles.css";
 const ItemDetailContainer = () => {
 
     const {id} = useParams();
-    const stock = 9;
+    
 
     const [producDetail, setProductDetail] = useState([]);
     useEffect (() => {
@@ -28,7 +28,7 @@ const ItemDetailContainer = () => {
     return (
         <div className="contenedorDetalle">
             <ItemDetail lista = {producDetail} />
-            <Contador stock = {stock} />
+            <Contador stock = {producDetail.stock} />
             <button className="boton">Agregar al carrito</button>        
         </div>
     )

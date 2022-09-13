@@ -9,6 +9,7 @@ const ItemDetail = ({lista}) => {
             <h2 className="detalle">Categoria: {lista.categoria}</h2>
             <p>{lista.descripcion}</p>
             <p>Precio: ${lista.precio}</p>
+            <p>Stock: {lista.stock}</p>
         </div>
     )
 }

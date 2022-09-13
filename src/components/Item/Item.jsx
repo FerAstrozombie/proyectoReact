@@ -1,5 +1,5 @@
 import "./styles.css"
-const Item = ({imagen, nombre, precio, categoria}) => {
+const Item = ({imagen, nombre, precio, categoria, stock}) => {
     return (
     
         <div className="guitarras">
@@ -7,6 +7,7 @@ const Item = ({imagen, nombre, precio, categoria}) => {
             <h2>{nombre}</h2>
             <h3>Precio: ${precio}</h3>
             <h2>Categoria: {categoria}</h2>
+            <h4>Stock: {stock}</h4>
             <button className="botonAgregar">Agregar al carrito</button>
         </div>
     

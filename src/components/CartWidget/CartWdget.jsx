@@ -7,7 +7,7 @@ export const CartWdget = () => {
     return (
     <div>
         <FaShoppingCart className='carrito' />
-        <span></span>        
+        <span>0</span>        
     </div>
     )
 }
