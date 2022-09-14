@@ -7,8 +7,7 @@ const Item = ({imagen, nombre, precio, categoria, stock}) => {
             <h2>{nombre}</h2>
             <h3>Precio: ${precio}</h3>
             <h2>Categoria: {categoria}</h2>
-            <h4>Stock: {stock}</h4>
-            <button className="botonAgregar">Agregar al carrito</button>
+            <h4>Stock: {stock}</h4>            
         </div>
     
     )

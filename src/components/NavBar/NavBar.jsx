@@ -16,7 +16,9 @@ const NavBar = () => {
             <li className="lista"><NavLink to={"/category/Electroacustica"}>Electroacustica</NavLink></li>        
         </ul>
         <button className="botonSesion">Inicia sesion</button>
-        <CartWdget/>
+        <NavLink to={"/cart"}>
+            <CartWdget/>
+        </NavLink>
     </div>)
 }
 
