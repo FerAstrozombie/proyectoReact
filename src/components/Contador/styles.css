@@ -6,7 +6,7 @@
 
 .acomodadoContador {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -31,4 +31,11 @@
     border-radius: 50px;
     text-align: center;
     margin-top: 10px;
+}
+
+.spanTotal {
+    color: #FFC800;
+}
+.precio {
+    margin: 30px;
 }

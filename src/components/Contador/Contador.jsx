@@ -1,16 +1,32 @@
 import "./styles.css"
 
-const Contador = ({setItem , items, stock}) => {
+const Contador = ({setItem , items, stock, precio}) => {
 
-    const sumar = () => items < stock  ? setItem(items + 1) : alert("No hay mas stock disponible")
-    const restar = () => items > 0 ? setItem(items - 1) : alert("No se aceptan valores negativos")
+    const sumar = () => {
+        if(items < stock) {
+            setItem(items + 1)
+        }
+    }
+    const restar = () => {
+        if(items > 0){
+            setItem(items - 1)
+        }
+        return;
+    }
 
     return (
         <>
             <div className="acomodadoContador">            
-                <button className="contador" onClick={sumar}>+</button>
-                <span className="spanDetalle">{items}</span>
-                <button className="contador" onClick={restar}>-</button>        
+                <div>
+                    <button className="contador" onClick={sumar}>+</button>
+                    <span className="spanDetalle">{items}</span>
+                    <button className="contador" onClick={restar}>-</button>                
+                </div>
+                <div className="precio">
+                    <span className="spanTotal">
+                        <b>Total: ${items * precio}</b>                
+                    </span>        
+                </div>
             </div>
         </>
     )
