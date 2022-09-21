@@ -5,7 +5,7 @@ const Item = ({imagen, nombre, precio}) => {
         <div className="guitarras">
             <img className="imagenesGuitarra" src={imagen} alt= {nombre} />
             <h2>{nombre}</h2>
-            <h3>Precio: ${precio}</h3>                        
+            <h3 className="precio">Precio: ${precio}</h3>                        
         </div>
     
     )

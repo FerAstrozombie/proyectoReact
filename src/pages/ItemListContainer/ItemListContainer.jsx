@@ -19,7 +19,8 @@ const ItemListContainer = ({greeting}) => {
             getProducts.then((response) => {
                 setProductList(response);
             })
-        }        
+        }  
+    // eslint-disable-next-line      
     },[categoryName])
 
     const getProducts = new Promise((resolve, reject) => { 

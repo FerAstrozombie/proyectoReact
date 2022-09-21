@@ -29,9 +29,11 @@
 
 }
 h2,h3,h4 {
-    color: black;
-    padding-bottom: 30px;
+    color: black;    
 }
 img {
     border-radius: 30px;
+}
+.precio {
+    padding-bottom: 30px;
 }
