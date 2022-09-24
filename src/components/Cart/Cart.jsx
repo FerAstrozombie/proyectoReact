@@ -19,10 +19,11 @@ const Cart = () => {
                         <div className="carritoflex" key={item.id}>
                             <div className="detatalleCarrito">
                                 <img className="imgCarrito" src={item.imagen} alt={item.nombre} />
-                                <h3>{item.nombre}</h3>
-                                <h4>Precio: ${item.precio}</h4>
+                                <h3 className="nombre">{item.nombre}</h3>
+                                <h4>Precio Unitario: ${item.precio}</h4>
+                                <h4>Precio total: ${item.precio * item.cantidad}</h4>
                                 <h4>Cantidad: {item.cantidad}</h4>
-                                <button onClick={() => removeItem(item.id)}>Eliminar producto</button>
+                                <button className="botonAgregar" onClick={() => removeItem(item.id)}>Eliminar producto</button>
                             </div>
                         </div>
             ))}

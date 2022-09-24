@@ -1,13 +1,7 @@
-.contenedorDetalle {
-
-    text-align: center;
-    width: 400px;
-    margin: auto;
+.contenedorDetalle {  
     margin-top: 50px;
-    margin-bottom: 50px;
-    border: 1px solid white;
+    margin-bottom: 50px;    
     padding: 30px;
-    border-radius: 30px;
 }
 
 .boton {

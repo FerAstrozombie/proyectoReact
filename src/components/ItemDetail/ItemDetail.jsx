@@ -10,23 +10,33 @@ const ItemDetail = ({lista}) => {
         console.log(items);
     }
     const {addToCart} = useContext(CartContext);
+    const {cart} = useContext(CartContext);
     function onAdd (lista) {        
         addToCart(lista, items)
     }
     return (
         <div className="descripcion">
-            <img className="imagenesGuitarra" src={lista.imagen} alt= {lista.nombre} />
-            <h3 className="titulo">{lista.nombre}</h3>
-            <h2 className="detalle">Categoria: {lista.category}</h2>
-            <p>{lista.descripcion}</p>
-            <p>Precio: ${lista.precio}</p>
-            <p>Stock: {lista.stock}</p>
-            <Contador stock = {lista.stock} setItem = {setItem} items = {items} precio = {lista.precio} />
-            <Link to={"/cart"}>
-                <button className="boton" onClick={clickeado}>Ir al carrito</button>
-            </Link>
-            <button className="boton" onClick={() => onAdd(lista)}>Agregar al carrito</button>
-            <Link to={"/productos"}>Volver</Link>
+            <div className="imagenContenedor">
+                <img className="imagen" src={lista.imagen} alt= {lista.nombre} />
+            </div>
+            <div className="ordenDetalle">
+                <h1 className="nombre">{lista.nombre}</h1>
+                <h3 className="detalle">Categoria: {lista.category}</h3>
+                <p>{lista.descripcion}</p>
+                <p>Precio: ${lista.precio}</p>
+                <p>Stock: {lista.stock}</p>
+                <Contador stock = {lista.stock} setItem = {setItem} items = {items} precio = {lista.precio} />
+                <div className="acomodadoBotones">
+                    {cart.length > 0 ? 
+                        <Link to={"/cart"}>
+                            <button className="boton" onClick={clickeado}>Ir al carrito</button>
+                        </Link>
+                        : "" }             
+                    <button className="boton" onClick={() => onAdd(lista)}>Agregar al carrito</button>
+                    <Link className="volver" to={"/productos"}>Volver</Link>
+                </div>
+                
+            </div>
         </div>
     )
 }

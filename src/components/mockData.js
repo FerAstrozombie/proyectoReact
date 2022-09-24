@@ -1,4 +1,4 @@
-const data = [
+/* const data = [
 
     {
         imagen: "/imagenes/guitarra-electrica-eko-strato-black.jpg",
@@ -69,4 +69,4 @@ const data = [
 
 ]
 
-export default data
+export default data */

@@ -6,14 +6,14 @@ export const CartProvider = ({children}) => {
 
     const addToCart = (item , cantidad) => {
         if (isInCart(item.id)) {
-            alert ("El producto ya esta en el carrito")
+            return
         }else {
             setCart([...cart, {...item, cantidad}]);
         }
     };
 
     const isInCart = (id) => {
-        return cart.some((item) =>item.id === id);
+        return cart.find((item) =>item.id === id);
     };
 
     const clear = () => {

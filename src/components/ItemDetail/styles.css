@@ -1,13 +1,55 @@
 p {
-    color: #FFC800;
+    color: black;
     padding: 5px;
 }
+.nombre {
+    color: black;
+}
+
 .descripcion {
     background-color: black;
 }
-.titulo {
-    color: #FFC800;
-}
+
 .detalle {
-    color: #FFC800;
+    color: black;
+}
+.ordenDetalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagen {
+    width: 400px;
+}
+.imagenContenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.descripcion {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 50px;
+}
+.acomodadoBotones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+b {
+    color: black;
+}
+
+.spanDetalle, a {
+    color: black;
+}
+
+.volver {
+    padding-bottom: 10px;
 }

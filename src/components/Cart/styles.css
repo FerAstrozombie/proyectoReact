@@ -5,9 +5,10 @@
     align-items: center;
     border: 1px solid white;
     border-radius: 30px;
+    background-color: white;
 }
-h4,h3 {
-    color: #FFC800;
+.nombre,h3 {
+    color: black;
 }
 .carritoflex {
     display: flex;
@@ -24,4 +25,5 @@ h4,h3 {
 .linkVolver {
     display: flex;
     justify-content: center;
+    color: #FFC800;
 }
