@@ -5,15 +5,17 @@ export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
 
     const addToCart = (item , cantidad) => {
-        if (isInCart(item.id)) {
-            return
+        const itemInCart = isInCart(item.id)
+        if (itemInCart) {
+            itemInCart.cantidad = itemInCart.cantidad += cantidad;            
         }else {
             setCart([...cart, {...item, cantidad}]);
         }
     };
 
     const isInCart = (id) => {
-        return cart.find((item) =>item.id === id);
+        return cart.find((cartItem) =>cartItem.id === id);
+        
     };
 
     const clear = () => {
@@ -33,7 +35,7 @@ export const CartProvider = ({children}) => {
     };
 
     return (
-        <CartContext.Provider value={{cart , addToCart , removeItem,}}>
+        <CartContext.Provider value={{cart , addToCart , removeItem, clear}}>
             {children}
         </CartContext.Provider>
     );

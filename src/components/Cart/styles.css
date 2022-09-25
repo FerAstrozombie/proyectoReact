@@ -11,13 +11,9 @@
     color: black;
 }
 .carritoflex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex;    
     width: 400px;
     margin: 30px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .imgCarrito {
     margin-top: 20px;
@@ -26,4 +22,36 @@
     display: flex;
     justify-content: center;
     color: #FFC800;
+}
+.carritoContenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+}
+.botonVaciar {
+    width: 150px;
+    height: 30px;
+    margin: 20px;
+    border: 1px solid #FFC800;
+    /*anchura, estilo y color borde*/
+    padding: 5px;
+    /*espacio alrededor texto*/
+    background-color: #FFC800;
+    /*color botón*/
+    color: #ffffff;
+    /*color texto*/
+    text-decoration: none;
+    /*decoración texto*/
+    text-transform: uppercase;
+    /*capitalización texto*/
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+.marco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
