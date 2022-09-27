@@ -5,6 +5,7 @@
     border-radius: 30px;
     padding-top: 30px;
     margin-top: 20px;
+    border: 2px solid black;
 }
 .imagenesGuitarra:hover {
     scale: 1.1;

@@ -6,6 +6,7 @@ import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
 import Cart from './components/Cart/Cart';
 import Inicio from './components/Inicio/Inicio';
 import {CartProvider} from "./components/context/CartProvider"
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path='category/:categoryName' element={<ItemListContainer /> } />
             <Route path='cart' element={<Cart />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </CartProvider>
   );

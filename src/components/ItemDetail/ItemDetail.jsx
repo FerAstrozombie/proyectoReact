@@ -1,16 +1,27 @@
 import "./styles.css"
 import Contador from "../Contador/Contador";
-import { useState , useContext } from 'react';
+import { useState , useContext,useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 
 const ItemDetail = ({lista}) => {    
     const [items , setItem] = useState(1);
+    const [stock , setStock] = useState();
+    
+    useEffect (() => {
+        agregandoStock();
+    })
+    
     const clickeado = () => {
         console.log(items);
     }
     const {addToCart} = useContext(CartContext);
     const {cart} = useContext(CartContext);
+
+    function agregandoStock (){
+        setStock(lista.stock)
+    }
+    
     function onAdd (lista) {        
         addToCart(lista, items)
     }
@@ -24,8 +35,8 @@ const ItemDetail = ({lista}) => {
                 <h3 className="detalle">Categoria: {lista.category}</h3>
                 <p>{lista.descripcion}</p>
                 <p>Precio: ${lista.precio}</p>
-                <p>Stock: {lista.stock}</p>
-                <Contador stock = {lista.stock} setItem = {setItem} items = {items} precio = {lista.precio} />
+                <p>Stock: {stock}</p>
+                <Contador stock = {stock} setItem = {setItem} items = {items} precio = {lista.precio} />
                 <div className="acomodadoBotones">
                     {cart.length > 0 ? 
                         <Link to={"/cart"}>

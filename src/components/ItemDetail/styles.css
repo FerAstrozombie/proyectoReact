@@ -53,3 +53,15 @@ b {
 .volver {
     padding-bottom: 10px;
 }
+
+@media screen and (max-width: 480px){
+    .imagen {
+        width: 300px;
+    }
+    .descripcion{
+        flex-direction: column;
+    }
+    .acomodadoBotones{
+        flex-direction: column;
+    }
+}

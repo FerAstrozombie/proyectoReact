@@ -3,7 +3,7 @@ import { CartContext } from "../context/CartContext"
 import { Link } from "react-router-dom"
 import "./styles.css"
 const Cart = () => {
-    const {cart, removeItem, clear} = useContext(CartContext);
+    const {cart, removeItem, clear, totalPrecioCart} = useContext(CartContext);
     console.log("cart", cart);
     return (
         <>
@@ -11,6 +11,9 @@ const Cart = () => {
                 <h1>Carrito</h1>
                 {cart.length > 0 ?
                     <button className="botonVaciar" onClick={() => clear()}>Vaciar carrito</button>
+                : ""}
+                {totalPrecioCart() > 0 ?
+                <h3>Total: ${totalPrecioCart()}</h3>
                 : ""}
             </div>
             {cart.length ===0 ? (

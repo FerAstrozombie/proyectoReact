@@ -8,7 +8,7 @@ import { CartContext } from '../context/CartContext';
 export const CartWdget = () => {
     const {cart} = useContext(CartContext);    
     return (
-    <div>
+    <div className='centrado'>
         <FaShoppingCart className='carrito' />
         <span className='spanCarrito'>{cart.length}</span>        
     </div>

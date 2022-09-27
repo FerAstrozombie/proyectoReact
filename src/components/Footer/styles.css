@@ -1,0 +1,33 @@
+.logoFooter {
+    width: 30px;
+    margin: 10px;
+}
+.textoFooter {
+    color: black;
+}
+.flexFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tamañoLogo {
+    width: 30px;
+    margin: 10px;
+}
+.flexPadre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.copyrigth {
+    color: black;
+    font-weight: bold;
+}
+@media screen and (max-width: 480px){
+    .flexPadre {
+        flex-direction: column;
+    }
+}
