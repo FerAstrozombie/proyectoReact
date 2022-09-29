@@ -3,10 +3,25 @@ import Contador from "../Contador/Contador";
 import { useState , useContext,useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ItemDetail = ({lista}) => {    
     const [items , setItem] = useState(1);
     const [stock , setStock] = useState();
+    const toastify = () => {
+        toast.success("Producto agregado al carrito", {
+            position: "top-right",
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            });
+
+    };
     
     useEffect (() => {
         agregandoStock();
@@ -43,7 +58,17 @@ const ItemDetail = ({lista}) => {
                             <button className="boton" onClick={clickeado}>Ir al carrito</button>
                         </Link>
                         : "" }             
-                    <button className="boton" onClick={() => onAdd(lista)}>Agregar al carrito</button>
+                    <button className="boton" onClick={() => {onAdd(lista); toastify()}}>Agregar al carrito</button>
+                    <ToastContainer
+                    position="top-right"
+                    autoClose={4000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover />
                     <Link className="volver" to={"/productos"}>Volver</Link>
                 </div>
                 

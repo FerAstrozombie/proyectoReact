@@ -6,12 +6,15 @@ import { CartContext } from '../context/CartContext';
 
 
 export const CartWdget = () => {
-    const {totalItemsCart} = useContext(CartContext);
+    const {totalItemsState} = useContext(CartContext);
+    
 
     return (
     <div className='centrado'>
         <FaShoppingCart className='carrito' />
-        <span className='spanCarrito'>{totalItemsCart()}</span>        
+        <span className='spanCarrito'>
+            {totalItemsState}
+        </span>
     </div>
     )
 }
