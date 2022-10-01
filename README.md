@@ -11,7 +11,7 @@ Este proyecto fue realizado para el curso de React Js de Coderhouse [![coderhous
 
 ### Gif demostracion del flujo del sitio 
 
-![Alt Text](https://www.reactiongifs.us/wp-content/uploads/2013/10/nuh_uh_conan_obrien.gif)
+![Alt Text](https://media0.giphy.com/media/VaNsrytyiRXuT8HFD5/giphy.gif?cid=790b76117d48435dda4cfd1010dcb9326426584723431774&rid=giphy.gif&ct=g)
 
 ### Librerias usadas en este proyecto
 
