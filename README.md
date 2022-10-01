@@ -9,6 +9,10 @@ Este proyecto fue realizado para el curso de React Js de Coderhouse [![coderhous
 > Fernando Lair
 > Contact: fernando_puk77@hotmail.com > [linkedin](https://www.linkedin.com/in/fernando-lair/)
 
+### Gif demostracion del flujo del sitio 
+
+https://im.ge/i/1g53DM
+
 ### Librerias usadas en este proyecto
 
 | library                                                          | used                      |
