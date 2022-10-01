@@ -28,17 +28,8 @@ const ItemListContainer = ({greeting}) => {
 
     const getProducts = () => {
         const db = getFirestore();
-        const querySnapshot = collection(db, "Items");
-        if(categoryName){
-            const queryFiltered = query(querySnapshot, where("category", "==",categoryName))
-            getDocs(queryFiltered).then((response) => {
-                console.log(response.docs);
-                const data = response.docs.map((doc) => {
-                    return {id: doc.id, ...doc.data()}
-                })
-                setProductList(data);
-            })
-        }else{
+        const queryBase = collection(db, "Items");
+        const querySnapshot = categoryName ? query(queryBase, where("category", "==",categoryName)) : queryBase;
             getDocs(querySnapshot).then((response) => {
                 console.log(response.docs);
                 const data = response.docs.map((doc) => {
@@ -46,7 +37,6 @@ const ItemListContainer = ({greeting}) => {
                 })
                 setProductList(data);
             })
-        }
         
     }
     /* const getProducts = new Promise((resolve, reject) => { 

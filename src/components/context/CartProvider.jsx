@@ -29,15 +29,7 @@ export const CartProvider = ({children}) => {
 
     //Con esta funcion borro solo el producto seleccionado y envio un nuevo arreglo al Cart
     const removeItem = (productId) => {
-        let nuevoArreglo = [];
-        cart.forEach((product) => {
-            if(product.id === productId){
-                console.log(product);
-            }else {
-                nuevoArreglo.push(product);
-            }
-        });
-        setCart(nuevoArreglo);
+        setCart(cart.filter((product) => product.id !== productId));
     };
 
     //Con esta funcion calculo el precio total del Cart
@@ -46,8 +38,8 @@ export const CartProvider = ({children}) => {
     };
 
     return (
-        <CartContext.Provider value={{cart , addToCart , removeItem, clear, totalPrecioCart, totalItemsState}}>
+        <CartContext.Provider value={{cart , addToCart , removeItem, clear, totalPrecioCart, totalItemsState, setTotalItemsState}}>
             {children}
         </CartContext.Provider>
-    );
+    ); 
 };

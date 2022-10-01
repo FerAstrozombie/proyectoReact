@@ -1,3 +1,26 @@
+#  TIENDA DE GUITARRAS DEL OESTE
+
+## _ECOMMERCE Project in ReactJs_ 
+
+Este proyecto fue realizado para el curso de React Js de Coderhouse [![coderhouse](https://emprelatam.com/wp-content/uploads/2019/10/logos-coderhouse-01.png)](https://www.coderhouse.com/)
+
+### Author
+
+> Fernando Lair
+> Contact: fernando_puk77@hotmail.com > [linkedin](https://www.linkedin.com/in/fernando-lair/)
+
+### Librerias usadas en este proyecto
+
+| library                                                          | used                      |
+| ---------------------------------------------------------------- | ------------------------- |
+| [ReactJs](https://es.reactjs.org/)                               | JavaScript framework      |
+| [Create React App](https://github.com/facebook/create-react-app) | Create React Project      |
+| [Toastify-react](https://fkhadra.github.io/react-toastify/)      | alert framework           |
+| [Firebase](https://firebase.google.com/?hl=es)                   | Authentication & DataBase |
+| [React Router](https://reactrouter.com/)                         | Router                    |
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
