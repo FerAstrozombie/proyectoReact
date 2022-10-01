@@ -7,11 +7,11 @@ Este proyecto fue realizado para el curso de React Js de Coderhouse [![coderhous
 ### Author
 
 > Fernando Lair
-> Contact: fernando_puk77@hotmail.com > [linkedin](https://www.linkedin.com/in/fernando-lair/)
+> Contact: fernando_puk77@hotmail.com > [linkedin](https://www.linkedin.com/in/fernando-lair/)(https://im.ge/i/1g53DM)
 
 ### Gif demostracion del flujo del sitio 
 
-[![React App — Firefox Developer Edition 2022-10-01 00-34-09(1)](https://i.im.ge/2022/10/01/1g53DM.React-App-Firefox-Developer-Edition-2022-10-01-00-34-091.gif)](https://im.ge/i/1g53DM)
+![Alt Text](https://www.reactiongifs.us/wp-content/uploads/2013/10/nuh_uh_conan_obrien.gif)
 
 ### Librerias usadas en este proyecto
 
