@@ -11,7 +11,7 @@ Este proyecto fue realizado para el curso de React Js de Coderhouse [![coderhous
 
 ### Gif demostracion del flujo del sitio 
 
-https://im.ge/i/1g53DM
+[![React App — Firefox Developer Edition 2022-10-01 00-34-09(1)](https://i.im.ge/2022/10/01/1g53DM.React-App-Firefox-Developer-Edition-2022-10-01-00-34-091.gif)](https://im.ge/i/1g53DM)
 
 ### Librerias usadas en este proyecto
 
