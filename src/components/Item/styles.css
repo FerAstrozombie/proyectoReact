@@ -42,3 +42,16 @@ img {
     padding-bottom: 30px;
     color: black;
 }
+
+@media screen and (max-width: 480px) {
+    .guitarras{
+        width: 250px;
+    }
+    .imagenesGuitarra:hover {
+        scale: 1;
+        transition: 1.5s;
+    }
+    img {
+        width: 250px;
+    }
+}

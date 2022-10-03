@@ -6,15 +6,15 @@
     border: 2px solid black;
     border-radius: 30px;
     background-color: white;
+    width: 400px;
+}
+.ordenTienda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .nombre,h3 {
     color: black;
-}
-.carritoflex {
-    display: flex;    
-    width: 400px;
-    margin: 30px;
-    justify-content: center;
 }
 .imgCarrito {
     margin-top: 20px;
@@ -23,12 +23,6 @@
     display: flex;
     justify-content: center;
     color: #FFC800;
-}
-.carritoContenedor{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: white;
 }
 .botonVaciar {
     width: 150px;
@@ -56,13 +50,6 @@
     justify-content: center;
     align-items: center;
 }
-@media screen and (max-width: 480px){
-    .carritoContenedor{
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
 .formFlex{
     display: flex;
     flex-direction: column;
@@ -85,4 +72,15 @@
     border: none;
     padding: 7px;
     cursor: pointer;
+}
+@media screen and (max-width: 480px){
+    .detatalleCarrito {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    .ordenTienda{
+        flex-direction: column;
+    }
 }

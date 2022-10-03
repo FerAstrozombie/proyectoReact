@@ -17,12 +17,12 @@ const Inicio = () => {
                     </p>
                 </div>
                 <div data-aos="fade-left">
-                    <img className="imagen" src="../imagenes/1.jpg" alt="Guitarra!" />
+                    <img className="imagenInicio" src="../imagenes/1.jpg" alt="Guitarra!" />
                 </div>
         </div>
         <div className="textoReducido">              
                 <div data-aos="fade-right">
-                    <img className="imagen" src="../imagenes/3.jpg" alt="Guitarra!" />
+                    <img className="imagenInicio" src="../imagenes/3.jpg" alt="Guitarra!" />
                 </div>
                 <div className="flexizado" data-aos="fade-left">
                     <p className="textoInicioDos">
@@ -37,12 +37,12 @@ const Inicio = () => {
                     </p>
                 </div>
                 <div data-aos="fade-left">
-                    <img className="imagen" src="../imagenes/7.jpg" alt="Guitarra!" />
+                    <img className="imagenInicio" src="../imagenes/7.jpg" alt="Guitarra!" />
                 </div>
         </div>
         <div className="textoReducido">              
                 <div data-aos="fade-right">
-                    <img className="imagen" src="../imagenes/6.jpg" alt="Guitarra!" />
+                    <img className="imagenInicio" src="../imagenes/6.jpg" alt="Guitarra!" />
                 </div>
                 <div className="flexizado" data-aos="fade-left">
                     <p className="textoInicioDos">
@@ -57,7 +57,7 @@ const Inicio = () => {
                     </p>
                 </div>
                 <div data-aos="fade-left">
-                    <img className="imagen" src="../imagenes/2.jpg" alt="Guitarra!" />
+                    <img className="imagenInicio" src="../imagenes/2.jpg" alt="Guitarra!" />
                 </div>
         </div>
     </div>

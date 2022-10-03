@@ -174,11 +174,9 @@ const Cart = () => {
                     <Link className="linkVolver" to={"/productos"}>Volver a productos</Link>
                 </>
                 ) : (
-                <div className="carritoContenedor">
+                <div className="ordenTienda">
                     {cart.map((item) => (
-                        
-                        <div className="carritoflex" key={item.id}>
-                            <div className="detatalleCarrito">
+                            <div className="detatalleCarrito"key={item.id}>
                                 <img className="imgCarrito" src={item.imagen} alt={item.nombre} />
                                 <h3 className="nombre">{item.nombre}</h3>
                                 <h4>Precio Unitario: ${item.precio}</h4>
@@ -196,8 +194,7 @@ const Cart = () => {
                                 draggable
                                 pauseOnHover />
                             </div>
-                        </div>
-            ))}
+                    ))}
                 </div>
             )}
         </>

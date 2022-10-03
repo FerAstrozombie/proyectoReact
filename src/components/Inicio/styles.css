@@ -40,7 +40,7 @@ h3 {
     flex-direction: row;
     margin-top: 100px;
 }
-.imagen {
+.imagenInicio {
     width: 500px;
 }
 @media screen and (max-width: 480px){
@@ -49,5 +49,16 @@ h3 {
     }
     .textFlex{
         margin-top: 30px;
+    }
+    .textoReducido{
+        flex-direction: column;
+    }
+    .imagenInicio{
+        width: 100%;
+    }
+    .textoInicioDos, .textoInicioUno{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
