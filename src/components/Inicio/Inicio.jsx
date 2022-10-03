@@ -1,30 +1,65 @@
 import "./styles.css"
 
-
 const Inicio = () => {
     return (
     <div>
         <h1>Birenvenido a tu tienda de guitarras</h1>
         <h3>Te contamos un poco sobre nosotros</h3>
-        <div className="textFlex">
-            <div className="textoReducido">
-                <p className="textoInicio">
-                    Somos una empresa familiar, fundada en 1939 por Don Cosme.
-                    Mantenemos la misma esencia desde ese entonces: Una guitarra
-                    es como un amigo.
-                    Te invitamos a que nos conozcas y nos visites. Estamos ubicados
-                    en zona oeste, donde esta el agite y donde vive el Rock.
-                    Si venis vas a encontrar esa guitarra que estas buscando.
-                </p>
-            </div>
-            <div>
-                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.415329555855!2d-58.56700808494536!3d-34.64421256714846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e5eee8b3c9%3A0x35485944483432cd!2sAv.%20de%20Mayo%20360%2C%20B1704BUQ%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1663266265559!5m2!1ses!2sar">
-                </iframe>
-            </div>
-            
-        </div>  
-
-    
+        <div className="textoReducido">              
+                <div className="flexizado" data-aos="fade-right">
+                    <p className="textoInicioUno">
+                        Somos una empresa familiar, fundada en 1939 por Don Cosme.
+                        Mantenemos la misma esencia desde ese entonces: Una guitarra
+                        es como un amigo.
+                        Te invitamos a que nos conozcas y nos visites. Estamos ubicados
+                        en zona oeste, donde esta el agite y donde vive el Rock.
+                        Si venis vas a encontrar esa guitarra que estas buscando.
+                    </p>
+                </div>
+                <div data-aos="fade-left">
+                    <img className="imagen" src="../imagenes/1.jpg" alt="Guitarra!" />
+                </div>
+        </div>
+        <div className="textoReducido">              
+                <div data-aos="fade-right">
+                    <img className="imagen" src="../imagenes/3.jpg" alt="Guitarra!" />
+                </div>
+                <div className="flexizado" data-aos="fade-left">
+                    <p className="textoInicioDos">
+                    La guitarra Les Paul o guitarra Gibson Les Paul, que es su nombre oficial, es una guitarra Gibson de gama alta, que comenzó a fabricarse en la década de 1950. Su principal característica que las diferencia de otras Gibson es que su forma es inconfundible, con su mástil corto, sus dos pastillas y sus cuatro botones.
+                    </p>
+                </div>
+        </div>
+        <div className="textoReducido">              
+                <div className="flexizado" data-aos="fade-right">
+                    <p className="textoInicioUno">
+                    Una guitarra electro-acústica es un instrumento musical armónico equipado con pastillas, un micrófono o transductores. En las guitarras electro-acústicas, los transductores y micrófonos se utilizan siempre porque las pastillas convencionales no son capaces de captar las vibraciones de los materiales no magnéticos.
+                    </p>
+                </div>
+                <div data-aos="fade-left">
+                    <img className="imagen" src="../imagenes/7.jpg" alt="Guitarra!" />
+                </div>
+        </div>
+        <div className="textoReducido">              
+                <div data-aos="fade-right">
+                    <img className="imagen" src="../imagenes/6.jpg" alt="Guitarra!" />
+                </div>
+                <div className="flexizado" data-aos="fade-left">
+                    <p className="textoInicioDos">
+                    La guitarra eléctrica es un tipo de guitarra en la que, a diferencia de la guitarra española y la guitarra sajona, su caja no hace resonancia, por lo que el sonido se produce indirectamente por inducción eléctrica y a través de un amplificador o también a través de un pedal de efectos.
+                    </p>
+                </div>
+        </div>
+        <div className="textoReducido">              
+                <div className="flexizado" data-aos="fade-right">
+                    <p className="textoInicioUno">
+                    La guitarra es un instrumento musical de cuerda pulsada, compuesto de una caja de madera, un mástil sobre el que va adosado el diapasón o trastero —generalmente con un agujero acústico en el centro de la tapa (boca)—, y seis cuerdas. Sobre el diapasón van incrustados los trastes, que permiten las diferentes notas.
+                    </p>
+                </div>
+                <div data-aos="fade-left">
+                    <img className="imagen" src="../imagenes/2.jpg" alt="Guitarra!" />
+                </div>
+        </div>
     </div>
     )
 }

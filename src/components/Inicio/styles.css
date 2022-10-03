@@ -1,24 +1,31 @@
+
 h1 {
     font-size: 1.5rem;
     color: black;
     text-align: center;
     margin-top: 40px;
 }
-
 h3 {
     font-size: 1rem;
     color: black;
     text-align: center;
     margin-top: 40px;
 }
-.textoInicio{
+.textoInicioUno{
     color: black;
     font-style: italic;
-    text-justify: distribute;
+    width: 80%;
+    margin-left: 50px;
 }
-.mapa {
-    width: 600px;
-    height: 400px;
+.textoInicioDos{
+    color: black;
+    font-style: italic;
+    width: 80%;
+    margin-left: 100px;
+}
+.flexizado{
+    display: flex;
+    align-items: center;
 }
 .textFlex {
     display: flex;
@@ -28,22 +35,17 @@ h3 {
     margin-top: 100px;
 }
 .textoReducido {
-    width: 50%;
     margin: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
 }
-iframe {
+.imagen {
     width: 500px;
-    height: 300px;
-    border-radius: 30px;
-    border: 3px solid black;
 }
 @media screen and (max-width: 480px){
     .textFlex {
         flex-direction: column;
-    }
-    iframe {
-            width: 300px;
-            height: 200px;
     }
     .textFlex{
         margin-top: 30px;

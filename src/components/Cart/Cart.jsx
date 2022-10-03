@@ -7,12 +7,15 @@ import 'react-toastify/dist/ReactToastify.css';
 import {collection, addDoc, getFirestore, updateDoc, doc} from "firebase/firestore"
 import moment from "moment/moment";
 import { useNavigate } from "react-router-dom";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 
 
 const Cart = () => {
     const {cart, removeItem, clear, totalPrecioCart, setTotalItemsState} = useContext(CartContext);
     const navigate = useNavigate();
+    const MySwal = withReactContent(Swal)
     const [order, setOrder] = useState({
         buyer: {
             name: "",
@@ -30,8 +33,28 @@ const Cart = () => {
         .then(({id}) => {
             console.log(id);
             updateStockProducts(cart);
-            alert ("Felicidades por tu compra")})
-        .catch(() => alert("Tu compra no pudo ser realizada, intentalo mas tarde"))
+            MySwal.fire({
+                title: `Felicidades ${nombreUsuario} por tu compra.
+                Tu nro de orden es: ${id}`,
+                background: "#000000",
+                color:"#FFFFFF",
+                showClass: {
+                popup: 'animate__animated animate__fadeInDown',
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                }
+            })
+        })
+        .catch(() => MySwal.fire({
+            title: "Tu compora no pudo ser realizada. Intentalo mas tarde",
+            showClass: {
+            popup: 'animate__animated animate__fadeInDown',
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
+        }))
         
     }
     const updateStockProducts = () =>{
@@ -53,7 +76,17 @@ const Cart = () => {
                 }
             })
             .catch(() => {
-                console.log("error al actualizar el stock");
+                MySwal.fire({
+                    title: "Error al actualizar el stock",
+                    background: "#000000",
+                    color:"#FFFFFF",
+                    showClass: {
+                    popup: 'animate__animated animate__fadeInDown',
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__fadeOutUp'
+                    }
+                })
             })
         });
     };
@@ -84,6 +117,7 @@ const Cart = () => {
 
     };
     const handleInputChange = (e) => {
+
         setOrder({
             ...order,
             buyer: {
@@ -92,6 +126,9 @@ const Cart = () => {
             }
         });
     };
+
+    let nombreUsuario = order.buyer.name;
+    console.log(nombreUsuario);
     return (
         <>
             <div className="marco">

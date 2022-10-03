@@ -7,12 +7,14 @@ import Cart from './components/Cart/Cart';
 import Inicio from './components/Inicio/Inicio';
 import {CartProvider} from "./components/context/CartProvider"
 import Footer from './components/Footer/Footer';
+import ScrollButton from './components/ScrollButton/ScrollButton';
 
 function App() {
   return (
     <CartProvider>
       <BrowserRouter>
         <NavBar />
+        <ScrollButton />
         <Routes>
             <Route path='/' element={<Inicio />} />
             <Route path='productos' element={<ItemListContainer greeting={"Bienvenidos a nuestra tienda"} />}/>          
