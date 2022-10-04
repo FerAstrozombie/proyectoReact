@@ -3,7 +3,7 @@ import logo from '../../logo.png';
 import { CartWdget } from "../CartWidget/CartWdget";
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 import { useState } from "react";
 
 const NavBar = () => {

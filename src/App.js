@@ -5,7 +5,7 @@ import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer
 import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
 import Cart from './components/Cart/Cart';
 import Inicio from './components/Inicio/Inicio';
-import {CartProvider} from "./components/context/CartProvider"
+import {CartProvider} from "./context/CartProvider"
 import Footer from './components/Footer/Footer';
 import ScrollButton from './components/ScrollButton/ScrollButton';
 

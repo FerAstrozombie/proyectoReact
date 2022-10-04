@@ -2,7 +2,7 @@ import "./styles.css"
 import Contador from "../Contador/Contador";
 import { useState , useContext,useEffect } from 'react';
 import { Link } from "react-router-dom";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
